@@ -28,5 +28,6 @@ codes = ['161726','003096','001594','110022','320007','161725']
 desp = ''
 for code in codes:
     desp+=getInfo(code)+" \n-------------------------------\n"
+#以下两个微信推送api,自行申请密钥
 requests.get("https://sc.ftqq.com/.send?text=基金每日涨幅&desp="+desp)
 requests.get("https://xizhi.qqoq.net/.send?title=基金每日涨幅&content="+desp)
